@@ -69,7 +69,7 @@ install_or_update_nodejs() {
 install_or_update_better_grass() {
     if [ -d "/usr/bin/better-grass" ]; then
         echo "[❗] The better-grass is already installed."
-        read -p "[❓] Do you want to reinstall/update? (yes/no): " choice
+        choice=yes
         case "$choice" in
         yes | Yes | YES)
             echo "[✅] Reinstalling/Updating 'better-grass'..."
