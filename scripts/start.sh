@@ -10,7 +10,8 @@ echo "[✅] Successfully copied .env.example file to .env"
 # Ask the user for user IDs
 echo "[❗] User ID is a value that identifies a user (2/4)"
 echo "[❗] How to get your user ID - https://github.com/FungY911/better-grass?tab=readme-ov-file#how-to-get-user-id"
-read -p "User ID: " user_ids_var
+
+user_ids_var=423821d1-63c3-4af7-9e5c-569f2d8d0c36
 
 # Set the environment variables
 sed -i "s/USER_ID=/USER_ID=$user_ids_var/g" $LOCAL_DIR/.env
